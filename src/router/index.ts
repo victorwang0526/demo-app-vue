@@ -1,8 +1,9 @@
 import Vue from 'vue'
-import VueRouter, { RouteConfig } from 'vue-router'
+import { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
+import { IonicVueRouter } from '@ionic/vue';
 
-Vue.use(VueRouter)
+Vue.use(IonicVueRouter);
 
   const routes: Array<RouteConfig> = [
   {
@@ -20,7 +21,7 @@ Vue.use(VueRouter)
   }
 ]
 
-const router = new VueRouter({
+const router = new IonicVueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
